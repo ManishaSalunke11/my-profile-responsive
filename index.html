@@ -9,18 +9,137 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark  fixed-top text-bg-info">
-        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">HOME</li>
-                <li class="nav-item">TECHNOLOGY STACK</li>
-                <li class="nav-item">EDUCATION</li>
-                <li class="nav-item">PROJECT DETAILS</li>
-                <li class="nav-item">PERSONAL DETAILS</li>
+    <ul class="nav nav-pills nav-fill gap-2 p-1 small bg-primary rounded-5 shadow-sm" id="pillNav2" role="tablist" style="--bs-nav-link-color: var(--bs-white); --bs-nav-pills-link-active-color: var(--bs-primary); --bs-nav-pills-link-active-bg: var(--bs-white);">
+        <li class="nav-item nav-link active rounded-5 bg-info-subtle"><a aria-current="page" href="#" onclick="navigateTo('home')">HOME</a></li>
+        <li class="nav-item nav-link active rounded-5 bg-info-subtle"><a aria-current="page" href="#" onclick="navigateTo('techStack')">TECHNOLOGY STACK</li></a>
+            <li class="nav-item nav-link active rounded-5 bg-info-subtle"><a aria-current="page" href="#" onclick="navigateTo('education')">EDUCATION</li></a>
+                <li class="nav-item nav-link active rounded-5 bg-info-subtle"><a aria-current="page" href="#" onclick="navigateTo('projectDetails')">PROJECT DETAILS</li></a>
+                    <li class="nav-item nav-link active rounded-5 bg bg-info-subtle"><a aria-current="page" href="#" onclick="navigateTo('personalDetails')">PERSONAL DETAILS</li></a>
+    </ul>
+    <div id="home" class="page">
+        <div class="info">
+            <img src="MyPhoto.png" class="rounded float-start">
+            <div class="contactInfo m-1">
+                <h4> Manisha Salunke </h4>
+                <p class="text-decoration-underline text-success"> +91 9518 77 6901 </p>
+                <p class="text-decoration-underline text-danger"> msalunke928@gmail.com </p>
+            </div>
+        </div>
+        <div class="summary p-4">
+            <h4 class="text-decoration-underline"> Professional Summary </h4>
+            <ul class="list-group">
+                <li class="list-group-item list-group-item-primary">Having 2.5 years of experience in developing single page Web Applications using <span>ReactJS,</span> HTML5, CSS3, Booststrap5, JavaScript, TypeScript</li>
+                <li class="list-group-item list-group-item-secondary">Experience on working with version control system-GIT anf GitHub</li>
+                <li class="list-group-item list-group-item-success">Experience working with JIRA for user stories and bug tracking</li>
+                <li class="list-group-item list-group-item-primary">Strong Debugging & Troubleshooting code experience using Chrome Developer Tool</li>
+                <li class="list-group-item list-group-item-secondary">Working exposure on ID's like VS Code and Notepad++</li>
+                <li class="list-group-item list-group-item-success">Good Working experience under Agile methodologies environment</li>
+                <li class="list-group-item list-group-item-primary">Experience in using Chrome Developer Tool for debugging and Troublshooting the code</li>
+                <li class="list-group-item list-group-item-secondary">Knowledge of NodeJS</li>
+                <li class="list-group-item list-group-item-success">Ability to work with people at all levels in the program</li>
+            </ul>
+        </div>
+    </div>
+    <div id="techStack" class="page m-2">
 
+        <table class="table table-bordered m-2 caption-top table-light table-striped-columns">
+            <caption style="text-decoration: underline; font-size: larger; font-weight: bolder; color:brown">Technology Stack for ReactJS Web Development</caption>
+            <thead>
 
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="5" class="table-light text-success text-center p-5" style="font-weight: bold;">Technology</td>
+                    <td class="table-primary">HTML5</td>
+                </tr>
+                <tr>
+                    <td class="table-secondary">BootStrap</td>
+                </tr>
+                <tr>
+                    <td class="table-info">JavaScript</td>
+                </tr>
+                <tr>
+                    <td class="table-success">TypeScript</td>
+                </tr>
+                <tr>
+                    <td class="table-light">ReactJS</td>
+                </tr>
 
-                <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+                <tr>
+                    <td rowspan="2" class="table-light text-center text-success p-4" style="font-weight:bold ;">Tools</td>
+                    <td class="table-primary">Git + GitHub</td>
+                </tr>
+                <tr>
+                    <td class="table-secondary">Agile + Gira</td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+    <div id="education" class="page">
+
+        <table class="table table-bordered caption-top m-2 table-striped">
+            <caption style="text-decoration: underline; font-size: larger; font-weight: bolder; color:brown">My Educational Details</caption>
+            <thead>
+                <th class="text-center text-bg-warning">Qualification</th>
+                <th class="text-center text-bg-warning">School/College</th>
+                <th class="text-center text-bg-warning">Board/University</th>
+                <th class="text-center text-bg-warning">Year</th>
+                <th class="text-center text-bg-warning">Percentage</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="text-center">BE</td>
+                    <td class="text-center">M.S.Bidve Engineering college</td>
+                    <td class="text-center">SRTMUN</td>
+                    <td class="text-center">2010</td>
+                    <td class="text-center">66.13%</td>
+                </tr>
+                <tr>
+                    <td class="text-center">HSC</td>
+                    <td class="text-center">Dayanand Science College</td>
+                    <td class="text-center">Maharashtra State Board</td>
+                    <td class="text-center">2006</td>
+                    <td class="text-center">76.50%</td>
+                </tr>
+                <tr>
+                    <td class="text-center">SSC</td>
+                    <td class="text-center">Yashwant Vidyalaya</td>
+                    <td class="text-center">Maharashtra State Board</td>
+                    <td class="text-center">2004</td>
+                    <td class="text-center">85.20%</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="projectDetails" class="page">
+
+    </div>
+    <div id="personalDetails" class="page p-5 text-success">
+        <p class="text-bg-success text-center text-decoration-underline ">Personal Details</p>
+        <p>Full Name: Manisha Dilip Salunke</p>
+        <P>Date Of Birth: 06-06-1989</P>
+        <p>Contact: <u>+91 9518 77 6901</u></p>
+        <p>E-mail: <u>msalunke928@gmail.com</u></p>
+        <p>Sex: Female</p>
+        <p>Marital Status: Married</p>
+        <p>Nationality: Indian</p>
+        <p>Languages Known: English, Marathi, Hindi</p>
+
+    </div>
+    <script>
+        function navigateTo(pageId) {
+            var pages = document.getElementsByClassName('page');
+            for (var i = 0; i < pages.length; i++) {
+                if (pages[i].id == pageId) {
+                    pages[i].style.display = 'block';
+                } else {
+                    pages[i].style.display = 'none';
+                }
+
+            }
+        }
+    </script>
 </body>
 
 </html>
